@@ -1,8 +1,28 @@
 digraph Tree {
 node [shape=box, style="filled", color="black"] ;
-0 [label="displacement <= 190.5\ngini = 0.4989\nsamples = 392\nvalue = [205, 187]\nclass = No", fillcolor="#e5813916"] ;
-1 [label="gini = 0.2896\nsamples = 222\nvalue = [39, 183]\nclass = Yes", fillcolor="#399de5c9"] ;
+0 [label="displacement <= 190.5\ngini = 0.4993\nsamples = 397\nvalue = [206, 191]\nclass = No", fillcolor="#e5813913"] ;
+1 [label="displacement <= 119.5\ngini = 0.2856\nsamples = 226\nvalue = [39, 187]\nclass = Yes", fillcolor="#399de5ca"] ;
 0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
-2 [label="gini = 0.046\nsamples = 170\nvalue = [166, 4]\nclass = No", fillcolor="#e58139f9"] ;
-0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+2 [label="acceleration <= 13.65\ngini = 0.1092\nsamples = 138\nvalue = [8, 130]\nclass = Yes", fillcolor="#399de5ef"] ;
+1 -> 2 ;
+3 [label="gini = 0.5\nsamples = 6\nvalue = [3, 3]\nclass = No", fillcolor="#e5813900"] ;
+2 -> 3 ;
+4 [label="gini = 0.0729\nsamples = 132\nvalue = [5, 127]\nclass = Yes", fillcolor="#399de5f5"] ;
+2 -> 4 ;
+5 [label="displacement <= 132.5\ngini = 0.4564\nsamples = 88\nvalue = [31, 57]\nclass = Yes", fillcolor="#399de574"] ;
+1 -> 5 ;
+6 [label="gini = 0.4946\nsamples = 29\nvalue = [16, 13]\nclass = No", fillcolor="#e5813930"] ;
+5 -> 6 ;
+7 [label="gini = 0.3792\nsamples = 59\nvalue = [15, 44]\nclass = Yes", fillcolor="#399de5a8"] ;
+5 -> 7 ;
+8 [label="acceleration <= 21.6\ngini = 0.0457\nsamples = 171\nvalue = [167, 4]\nclass = No", fillcolor="#e58139f9"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="acceleration <= 16.95\ngini = 0.0347\nsamples = 170\nvalue = [167, 3]\nclass = No", fillcolor="#e58139fa"] ;
+8 -> 9 ;
+10 [label="gini = 0.0\nsamples = 137\nvalue = [137, 0]\nclass = No", fillcolor="#e58139ff"] ;
+9 -> 10 ;
+11 [label="gini = 0.1653\nsamples = 33\nvalue = [30, 3]\nclass = No", fillcolor="#e58139e6"] ;
+9 -> 11 ;
+12 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = Yes", fillcolor="#399de5ff"] ;
+8 -> 12 ;
 }
